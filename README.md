@@ -1,1 +1,37 @@
-# ImageReviewTool
+# ImageReviewTool 🖼️
+
+반려동물 호텔 예약 시스템을 위해 제작한 이미지 검수 툴
+반려동물 전용 숙박업소에서 이미지 검수 작업을 효율적으로 수행하기 위해, 확대 뷰와 조명 고려 스탬프 기능을 포함한 툴입니다.
+
+<div align="center"> <img src="https://img.shields.io/badge/PySide6-3776AB?style=flat-square&logo=Python&logoColor=white"/> <img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=NumPy&logoColor=white"/> <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=OpenCV&logoColor=white"/> </div>
+
+## 📌 주요 기능
+조명 방향 고려 스탬프 기능
+이미지를 검수하며, 스탬프를 찍을 때 조명 방향을 자동으로 계산하여 적용할 수 있어 자연스러운 라벨링이 가능합니다.
+
+확대 뷰로 세부 검수 편리성
+검수를 돕기 위해 250%, 500%로 확대된 이미지와 전체 이미지를 한 화면에서 동시에 볼 수 있습니다.
+
+핫키를 통한 빠른 이미지 필터링
+키 하나로 이미지 검수에 불필요한 이미지를 빠르게 필터링하고 저장할 수 있어 생산성이 증가합니다.
+
+## 📌 설치 방법
+1. 필요한 의존성 설치
+bash
+코드 복사
+pip install -r requirements.txt
+2. 실행 방법
+bash
+코드 복사
+python main.py
+## 📌 프로젝트 구조
+view.py : 이미지와 라벨 오버레이를 위한 뷰 로직을 처리합니다.
+controller.py : 뷰와 모델 간 상호작용을 제어하여 사용자 입력을 처리합니다.
+model.py : 이미지 및 파일 시스템을 관리하는 데이터 모델입니다.
+## 📌 예시 화면
+전체 이미지와 확대 뷰
+<img width="100%" src="https://example.com/full_image_view.jpg">
+
+조명 방향 고려 스탬프 기능 예시
+<img width="100%" src="https://example.com/stamp_with_light_direction.jpg">
+
